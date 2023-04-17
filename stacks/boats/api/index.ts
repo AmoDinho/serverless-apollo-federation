@@ -13,3 +13,11 @@ const BoatsAPI = (Stack: Construct): Api => {
     },
   });
 };
+
+const BoatsResourcesAPI = (stack: Construct): IBoatsAPIResource => {
+  return {
+    BoatsAPI: BoatsAPI,
+  };
+};
+
+export default BoatsResourcesAPI;
