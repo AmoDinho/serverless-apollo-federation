@@ -11,12 +11,19 @@ const BoatsAPI = (Stack: Construct): Api => {
         function: 'packages/boats/__graphql/index.handler',
       },
     },
+    defaults: {
+      function: {
+        timeout: 40,
+      },
+    },
   });
+
+  return boatsAPI;
 };
 
 const BoatsResourcesAPI = (stack: Construct): IBoatsAPIResource => {
   return {
-    BoatsAPI: BoatsAPI,
+    BoatsAPI: BoatsAPI(stack),
   };
 };
 
