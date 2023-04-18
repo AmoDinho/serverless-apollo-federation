@@ -22,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@genql/cli": "^3.0.5",
     "@pothos/core": "^3.29.0"
   }
 }
