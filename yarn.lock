@@ -1812,6 +1812,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@pothos/core@^3.29.0":
+  version "3.29.0"
+  resolved "https://registry.yarnpkg.com/@pothos/core/-/core-3.29.0.tgz#cc3fa43980280637de9bd42d653e363812aa0e91"
+  integrity sha512-6LcrnZ3QRQrbWvKLfdSvfrk1nyezLaDAT8yIhQXLOhhtm3iK+knIpdGbNfKiTgxbdSDkK69IcXNV4ifcq23bIQ==
+
 "@trpc/server@9.16.0":
   version "9.16.0"
   resolved "https://registry.yarnpkg.com/@trpc/server/-/server-9.16.0.tgz#93fc30166f92a4f1286da63ad3bad42c955c7e15"
