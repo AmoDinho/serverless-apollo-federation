@@ -8,5 +8,13 @@ IBoatGQL.implement({
     boat_id: t.exposeString('boat_id'),
   }),
 });
-builder.queryType({});
+builder.queryType({
+  fields: (t) => ({
+    getBoats: t.field({
+      description: 'Get Baots',
+      type: [IBoatGQL],
+      resolve: () => getBoats(),
+    }),
+  }),
+});
 builder.mutationType({});
