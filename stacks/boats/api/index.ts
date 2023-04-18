@@ -10,6 +10,13 @@ const BoatsAPI = (Stack: Construct): Api => {
       'POST /boats-graphql': {
         function: 'packages/boats/__graphql/index.handler',
       },
+      pothos: {
+        schema: 'packages/boats/__graphql/schema.ts',
+        output: 'packages/boats/__graphql/schema.graphql',
+        commands: [
+          'cd packages/boats/__graphql && npx @genql/cli --output ./genql --schema ./schema.graphql --esm',
+        ],
+      },
     },
     defaults: {
       function: {
