@@ -2,6 +2,7 @@
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     "module": "esnext",
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@my-sst-app/core/*": ["../core/src/*"]
