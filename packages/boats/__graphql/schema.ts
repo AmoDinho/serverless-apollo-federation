@@ -1,5 +1,5 @@
 import { builder } from './builder';
 
-import './types/Boats';
+// import '../types';
 
 export const schema = builder.toSchema({});
