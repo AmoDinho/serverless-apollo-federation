@@ -5,7 +5,7 @@ const BoatsStack = ({ stack }: StackContext) => {
   const boatsResourcesAPI = BoatsResourcesAPI(stack);
 
   stack.addOutputs({
-    BoatsAPIEndpoint: BoatsResourcesAPI.BoatsAPI.url,
+    BoatsAPIEndpoint: boatsResourcesAPI.BoatsAPI.url,
   });
   return {
     boatsResourcesAPI,

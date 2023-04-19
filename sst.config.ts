@@ -1,14 +1,13 @@
-import { SSTConfig } from "sst";
-import { API } from "./stacks/MyStack";
-
+import { SSTConfig } from 'sst';
+import BoatsStack from './stacks/boats';
 export default {
   config(_input) {
     return {
-      name: "my-sst-app",
-      region: "us-east-1",
+      name: 'serverless-apollo',
+      region: 'eu-west-1',
     };
   },
   stacks(app) {
-    app.stack(API);
-  }
+    app.stack(BoatsStack);
+  },
 } satisfies SSTConfig;
