@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.319.0",
+    "@aws-sdk/lib-dynamodb": "^3.319.0",
     "@genql/cli": "^3.0.5",
     "@pothos/core": "^3.29.0"
   }
