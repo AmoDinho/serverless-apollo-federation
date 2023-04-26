@@ -18,7 +18,7 @@ const BoatsBucket = (stack: Construct): IBoatsBucket => {
 
 const BoatsResourceS3 = (stack: Construct) => {
   return {
-    BoatsBucket: BoatsBucket,
+    BoatsBucket: BoatsBucket(stack),
   };
 };
 
