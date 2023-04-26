@@ -28,6 +28,7 @@ const BoatsStack = ({ stack }: StackContext) => {
   });
   return {
     boatsResourcesAPI,
+    boatsResourcesS3,
     boatsResoucesDynamoDB,
   };
 };
