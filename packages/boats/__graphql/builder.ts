@@ -14,6 +14,13 @@ builder.queryType({
     getBoats: t.field({
       description: 'Get Baots',
       type: [IBoatGQL],
+      args: {
+        boat_id: t.arg({
+          type: 'String',
+          description: 'Boat ID',
+          required: true,
+        }),
+      },
       resolve: () => getBoats(),
     }),
   }),
